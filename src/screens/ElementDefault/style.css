@@ -1,0 +1,31 @@
+.element-default {
+  background: linear-gradient(
+      0deg,
+      rgba(10, 10, 10, 1) 0%,
+      rgba(10, 10, 10, 1) 100%
+    ), linear-gradient(0deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 1) 100%);
+  display: flex;
+  min-height: 5244px;
+  min-width: 1291px;
+  width: 100%;
+}
+
+.element-default .container-131 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 5244px;
+  margin-top: 0.4px;
+}
+
+.element-default .main-2 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 400px;
+  max-height: 4754.1px;
+  padding: 96px 0px 0px;
+  position: relative;
+  width: 1291px;
+}
