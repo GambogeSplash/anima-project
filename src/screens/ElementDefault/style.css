@@ -6,7 +6,8 @@
     ), linear-gradient(0deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 1) 100%);
   display: flex;
   min-height: 5244px;
-  min-width: 1291px;
+  /* allow the layout to be responsive instead of forcing a wide min-width */
+  min-width: 0;
   width: 100%;
 }
 
@@ -14,8 +15,9 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  height: 5244px;
-  margin-top: 0.4px;
+  /* avoid forcing an exact height so the page can grow/shrink naturally */
+  height: auto;
+  margin-top: 0;
 }
 
 .element-default .main-2 {
@@ -23,9 +25,12 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 400px;
-  max-height: 4754.1px;
-  padding: 96px 0px 0px;
+  gap: 64px; /* match screenshot spacing between major sections */
+  max-height: none;
+  padding: 96px 20px 0px; /* add horizontal padding for small screens */
   position: relative;
-  width: 1291px;
+  width: 100%;
+  max-width: 1291px; /* keep the original design width on large screens */
+  margin: 0 auto; /* center content */
+  box-sizing: border-box;
 }
